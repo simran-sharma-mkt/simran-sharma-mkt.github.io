@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simran Sharma — Marketing &amp; Business Development</title>
+<meta name="description" content="Simran Sharma — marketing strategy, business development and creative execution. I plan the marketing and make it too.">
+<meta property="og:title" content="Simran Sharma — Marketing &amp; Business Development">
+<meta property="og:description" content="I plan the marketing and make it too.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#F7F2E6; --paper:#FFFCF5; --ink:#1E1B18;
+  --emerald:#1F5141; --rust:#C25A3C; --ochre:#E3A33B; --sand:#F0DCAE;
+  --blush:#E9A6A0; --sky:#A9C5D5; --muted:#6B6358; --rule:#DED4BE;
+  --maxw:1200px; --navh:62px;
+}
+:root:not([data-theme="light"]){@media (prefers-color-scheme: dark){--bone:#F7F2E6;--paper:#FFFCF5;--ink:#1E1B18;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;margin:0;font-weight:600;letter-spacing:-.018em;line-height:1.02}
+.amp{font-family:"DM Sans",sans-serif;font-weight:400;font-style:normal}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+:focus-visible{outline:2.5px solid var(--rust);outline-offset:3px}
+section[id],header[id]{scroll-margin-top:calc(var(--navh) + 30px)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:80;background:rgba(247,242,230,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:14px 26px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.brand{font-family:Fraunces,serif;font-size:20px;font-weight:600}
+.brand span{color:var(--rust)}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:14.5px;font-weight:500}
+.nav ul a{position:relative;padding:3px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--rust);transition:width .3s}
+.nav ul a:hover::after{width:100%}
+.burger{display:none;width:40px;height:34px;align-items:center;justify-content:center}
+.burger i{display:block;width:21px;height:2px;background:var(--ink);position:relative;transition:background .2s}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:21px;height:2px;background:var(--ink);transition:transform .3s}
+.burger i::before{top:-7px}.burger i::after{top:7px}
+.nav.open .burger i{background:transparent}
+.nav.open .burger i::before{transform:translateY(7px) rotate(45deg)}
+.nav.open .burger i::after{transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:900px){
+  .burger{display:flex}
+  .nav ul{position:fixed;inset:var(--navh) 0 auto 0;background:var(--paper);flex-direction:column;gap:0;
+    border-bottom:1px solid var(--rule);transform:translateY(-130%);transition:transform .38s cubic-bezier(.2,.7,.2,1);padding:6px 0}
+  .nav.open ul{transform:none}
+  .nav ul li{border-top:1px solid var(--rule)}
+  .nav ul a{display:block;padding:15px 26px;font-size:17px}
+}
+
+/* ---------- hero with sky ---------- */
+.hero{position:relative;min-height:clamp(440px,62vh,620px);display:flex;align-items:center;
+  background-image:url(img/hero-sky.jpg);background-size:cover;background-position:right center;
+  border-bottom:1px solid var(--rule)}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(247,242,230,.90) 0%,rgba(247,242,230,.78) 30%,rgba(247,242,230,.44) 47%,rgba(247,242,230,.10) 56%,rgba(247,242,230,0) 62%)}
+.hero .w{position:relative;z-index:2;max-width:none;margin:0;padding:54px 26px 54px clamp(26px,6.5vw,120px)}
+.hero-txt{max-width:min(760px,54vw)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.chip{font-size:12.5px;font-weight:600;padding:6px 15px;border-radius:999px}
+.chip.e{background:var(--emerald);color:var(--paper)}
+.chip.r{background:var(--rust);color:var(--paper)}
+.chip.o{background:var(--ochre);color:var(--ink)}
+.hero h1{font-size:clamp(36px,5.5vw,70px);font-weight:600}
+.hero h1 em{font-style:italic;color:var(--rust)}
+.hero p.lede{font-size:18px;line-height:1.58;color:#4A443A;max-width:46ch;margin:22px 0 0;font-weight:500}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:999px;font-size:15px;
+  font-weight:600;background:var(--ink);color:var(--paper);transition:transform .25s,background .25s}
+.btn:hover{transform:translateY(-2px);background:var(--emerald)}
+.btn.o{background:rgba(255,252,245,.8);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.o:hover{background:var(--ink);color:var(--paper)}
+
+/* sections */
+.sec{padding:84px 0}
+.head{margin-bottom:34px}
+.head h2{font-size:clamp(32px,5vw,58px)}
+.head h2 em{font-style:italic;color:var(--rust)}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pil{border-radius:20px;padding:26px;color:var(--paper);text-align:left;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);min-height:178px;display:flex;flex-direction:column;justify-content:flex-end}
+.pil:hover,.pil[aria-expanded="true"]{transform:translateY(-5px)}
+.pil.p1{background:var(--emerald)}.pil.p2{background:var(--rust)}.pil.p3{background:var(--ochre);color:var(--ink)}
+.pil .n{font-family:Fraunces,serif;font-style:italic;font-size:14px;opacity:.8;margin-bottom:auto}
+.pil h3{font-size:clamp(23px,2.6vw,31px);margin-bottom:6px}
+.pil .hint{font-size:13px;opacity:.85}
+.pil-body{grid-column:1/-1;background:var(--paper);border-radius:20px;padding:0 28px;max-height:0;
+  overflow:hidden;transition:max-height .45s cubic-bezier(.2,.7,.2,1),padding .45s;border:1px solid var(--rule)}
+.pil-body.open{max-height:640px;padding:26px 28px}
+.pil-body h4{font-size:22px;margin-bottom:8px}
+.pil-body p{margin:0 0 16px;color:var(--muted);font-size:16px;max-width:62ch}
+.tagline-row{display:flex;flex-wrap:wrap;gap:8px}
+.tg{font-size:12.5px;padding:6px 13px;border-radius:999px;background:var(--bone);font-weight:500}
+.jump{display:inline-block;margin-top:18px;font-weight:600;font-size:14.5px;border-bottom:2px solid var(--rust);padding-bottom:2px}
+
+/* work */
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:24px}
+.fl{font-size:13.5px;font-weight:600;padding:9px 18px;border-radius:999px;
+  box-shadow:inset 0 0 0 1.5px var(--rule);transition:background .25s,box-shadow .25s,color .25s}
+.fl[aria-pressed="true"]{background:var(--ink);color:var(--paper);box-shadow:none}
+.fl:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border-radius:20px;overflow:hidden;background:var(--paper);border:1px solid var(--rule);
+  text-align:left;display:flex;flex-direction:column;width:100%;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -26px rgba(30,27,24,.5)}
+.card.hide{display:none}
+.card .shot{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:34px;position:relative}
+.card .shot img{max-height:100%;width:auto;max-width:78%;object-fit:contain;transition:transform .55s cubic-bezier(.2,.6,.2,1)}
+.card:hover .shot img{transform:scale(1.05)}
+.card.cf .shot{background:#DCEFE7}
+.card.ab .shot{background:#EDE8D6}
+.card.vs .shot{background:#D8E4F0}
+.card .bar{position:absolute;left:14px;top:14px;display:flex;gap:6px}
+.pill-s{font-size:11px;font-weight:700;padding:5px 11px;border-radius:999px;background:rgba(255,252,245,.93)}
+.card .txt{padding:20px}
+.card h3{font-size:25px;margin-bottom:4px}
+.card .role{font-size:13px;color:var(--muted);margin:0 0 12px;display:block}
+.card .open{font-size:13.5px;font-weight:600;color:var(--rust)}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:none}
+.modal.show{display:block}
+.modal .veil{position:absolute;inset:0;background:rgba(30,27,24,.55);backdrop-filter:blur(3px);animation:fade .3s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sheet{position:relative;max-width:1000px;margin:4vh auto;background:var(--paper);border-radius:24px;
+  max-height:92vh;overflow-y:auto;animation:rise .4s cubic-bezier(.2,.7,.2,1)}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.sheet .x{position:sticky;top:0;float:right;margin:14px 16px 0 0;width:40px;height:40px;border-radius:50%;
+  background:var(--bone);display:flex;align-items:center;justify-content:center;font-size:20px;z-index:5}
+.sheet-top{padding:34px 34px 0}
+.sheet-top .lg{height:34px;width:auto;margin-bottom:16px}
+.sheet-top .lg.tile{height:46px;border-radius:9px}
+.sheet h3{font-size:clamp(30px,4.4vw,46px);margin-bottom:5px}
+.sheet .role{color:var(--muted);font-size:14.5px;margin:0 0 14px}
+.sheet .status{display:inline-block;font-size:12px;font-weight:700;padding:6px 14px;border-radius:999px;background:var(--sand);margin-bottom:20px}
+.sheet p{font-size:16.5px;line-height:1.7;margin:0 0 14px;max-width:66ch;color:#39342E}
+.did{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+.did li{font-size:14.5px;line-height:1.55;padding:10px 0;border-top:1px solid var(--rule);color:var(--muted)}
+.did li b{color:var(--ink);font-weight:600}
+.gal{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:14px;padding:26px 34px 34px}
+.gal .cell{border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:var(--bone)}
+.gal .cell img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.gal figure{margin:0}
+.gal .cell img.fit{object-fit:contain;background:var(--paper);padding:10px}
+.vwrap{position:relative;aspect-ratio:4/5;background:#15211D;overflow:hidden}
+.vwrap video{width:100%;height:100%;object-fit:cover;display:block}
+.snd{position:absolute;right:9px;bottom:9px;width:34px;height:34px;border-radius:50%;
+  background:rgba(255,252,245,.92);display:flex;align-items:center;justify-content:center;font-size:14px;
+  line-height:1;transition:transform .2s}
+.snd:hover{transform:scale(1.08)}
+.gcap{font-size:11.5px;color:var(--muted);padding:7px 2px 0;text-align:center}
+
+/* EMEA */
+.emea{background:var(--sand);border-radius:28px;padding:34px}
+.emea-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}
+.emea h2{font-size:clamp(30px,4.4vw,50px);color:var(--emerald)}
+.emea h2 em{font-style:italic;color:var(--rust)}
+.emea .sub{color:#6B5A33;font-size:16px;line-height:1.6;margin:12px 0 0;max-width:48ch}
+.emea .tiny{font-size:13px;color:#7A6A44;margin-top:18px;line-height:1.55}
+.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:20px}
+.fig{background:rgba(255,252,245,.72);border-radius:14px;padding:13px 14px;text-align:left;transition:background .25s,transform .25s}
+.fig:hover{background:var(--paper);transform:translateY(-3px)}
+.fig b{display:block;font-family:Fraunces,serif;font-size:clamp(20px,2.4vw,27px);font-weight:600;color:var(--emerald);line-height:1}
+.fig span.lbl{display:block;font-size:12.5px;color:#6B5A33;margin-top:6px;font-weight:600}
+.fig .why{display:block;max-height:0;overflow:hidden;transition:max-height .35s;font-size:13px;color:#6B5A33;line-height:1.5}
+.fig[aria-expanded="true"] .why{max-height:150px;margin-top:9px}
+.map{width:100%;height:auto;display:block;border-radius:18px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sv{border-radius:18px;padding:24px;text-align:left;border:1px solid var(--rule);background:var(--paper);transition:transform .3s}
+.sv:hover{transform:translateY(-4px)}
+.sv:nth-child(even){background:#EFE7D6}
+.sv .n{display:block;font-family:Fraunces,serif;font-style:italic;font-size:13.5px;color:var(--rust);margin-bottom:8px}
+.sv h4{font-size:21px;line-height:1.14}
+.sv .more{display:block;max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1)}
+.sv[aria-expanded="true"] .more{max-height:220px}
+.sv .more p{margin:11px 0 0;font-size:14.5px;line-height:1.6;color:var(--muted)}
+.sv .tap{display:block;font-size:12.5px;color:var(--rust);font-weight:600;margin-top:12px}
+
+/* about */
+.about{background:var(--paper);border-radius:28px;padding:44px}
+.about-grid{display:grid;grid-template-columns:.6fr 1fr;gap:46px;align-items:center}
+.about p{font-size:16.5px;line-height:1.72;margin:0 0 14px;color:#39342E;max-width:58ch}
+.facts{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.fact{font-size:13px;padding:8px 15px;border-radius:999px;background:var(--bone);font-weight:500}
+.ab-photo{border-radius:20px;overflow:hidden;aspect-ratio:1/1;border:1px solid var(--rule)}
+.ab-photo img{width:100%;height:100%;object-fit:cover}
+
+/* contact */
+.contact{background:var(--rust);color:var(--paper);padding:92px 0 40px;margin-top:20px}
+.contact h2{font-size:clamp(36px,6.6vw,78px);margin-bottom:18px}
+.contact h2 em{font-style:italic;color:var(--sand)}
+.contact p{font-size:18px;opacity:.93;max-width:48ch;margin:0 0 30px}
+.contact .btn{background:var(--paper);color:var(--ink)}
+.contact .btn:hover{background:var(--ink);color:var(--paper)}
+.contact .btn.o{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 1.5px rgba(255,252,245,.65)}
+.contact .btn.o:hover{background:var(--paper);color:var(--ink)}
+.mailto{font-family:Fraunces,serif;font-size:clamp(20px,3vw,32px);display:inline-block;
+  border-bottom:2px solid rgba(255,252,245,.4);padding-bottom:4px;margin-bottom:28px}
+.mailto:hover{border-color:var(--sand)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;opacity:.8;
+  border-top:1px solid rgba(255,252,245,.22);padding-top:22px;margin-top:56px}
+
+@media (max-width:1000px){
+  .emea-grid,.about-grid{grid-template-columns:1fr;gap:30px}
+  .cards,.svc{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .sec{padding:56px 0}
+  .hero{min-height:0;background-position:72% center}
+  .hero::after{background:linear-gradient(180deg,rgba(247,242,230,.9) 0%,rgba(247,242,230,.72) 52%,rgba(247,242,230,.42) 100%)}
+  .hero .w{padding:44px 20px 230px 20px}
+  .hero-txt{max-width:100%}
+  .pillars{grid-template-columns:1fr}
+  .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -26px;padding:4px 26px 16px;scrollbar-width:none}
+  .cards::-webkit-scrollbar{display:none}
+  .card{flex:0 0 78%;scroll-snap-align:center}
+  .svc{grid-template-columns:1fr}
+  .did{grid-template-columns:1fr}
+  .emea,.about{padding:26px;border-radius:20px}
+  .sheet{margin:0;border-radius:0;max-height:100vh;min-height:100vh}
+  .sheet-top{padding:26px 20px 0}
+  .gal{grid-template-columns:repeat(2,1fr);padding:20px}
+  .figs{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#" id="brandLink">Simran Sharma<span>.</span></a>
+    <ul id="menu">
+      <li><a href="#what">What I do</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#emea">Business development</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="w">
+    <div class="hero-txt rv">
+      <div class="chips">
+        <span class="chip e">Marketing</span>
+        <span class="chip r">Business Development</span>
+        <span class="chip o">Creative Work</span>
+      </div>
+      <h1>I plan the marketing <em><span class="amp">&amp;</span> make it</em> too.</h1>
+      <p class="lede">I find where a business can grow, build the strategy and the brand around it, and then produce the marketing that takes it to customers.</p>
+      <div class="acts">
+        <a class="btn" href="#work">Explore my work</a>
+        <a class="btn o" href="#contact">Let's talk</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PILLARS -->
+<section class="sec" id="what">
+  <div class="w">
+    <div class="head rv"><h2>Three things I <em>actually do</em></h2></div>
+    <div class="pillars rv" id="pillars">
+      <button class="pil p1" data-p="p1" aria-expanded="false" aria-controls="pb">
+        <span class="n">01</span><h3>Marketing</h3><span class="hint">Strategy, campaigns, branding, digital</span></button>
+      <button class="pil p2" data-p="p2" aria-expanded="false" aria-controls="pb">
+        <span class="n">02</span><h3>Business Development</h3><span class="hint">Markets, relationships, customers, growth</span></button>
+      <button class="pil p3" data-p="p3" aria-expanded="false" aria-controls="pb">
+        <span class="n">03</span><h3>Creative Work</h3><span class="hint">Identity, social, content, campaigns</span></button>
+      <div class="pil-body" id="pb"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="w">
+    <div class="head rv"><h2>Selected <em>work</em></h2></div>
+    <div class="filters rv" id="filters">
+      <button class="fl" data-f="all" aria-pressed="true">Everything</button>
+      <button class="fl" data-f="marketing" aria-pressed="false">Marketing</button>
+      <button class="fl" data-f="bd" aria-pressed="false">Business Development</button>
+      <button class="fl" data-f="creative" aria-pressed="false">Creative Work</button>
+    </div>
+    <div class="cards rv" id="cards">
+      <button class="card cf" data-cat="marketing bd creative" data-k="cf">
+        <span class="shot"><img src="img/logo-campaignflow.png" alt="CampaignFlow">
+          <span class="bar"><span class="pill-s">Marketing</span><span class="pill-s">Business Dev</span></span></span>
+        <span class="txt"><h3>CampaignFlow</h3>
+          <span class="role">Head of Marketing &amp; Sales · B2B SaaS</span>
+          <span class="open">Open case study</span></span></button>
+      <button class="card ab" data-cat="creative marketing" data-k="ab">
+        <span class="shot"><img src="img/logo-antarbindu.png" alt="Antarbindu Art">
+          <span class="bar"><span class="pill-s">Creative</span><span class="pill-s">Marketing</span></span></span>
+        <span class="txt"><h3>Antarbindu Art</h3>
+          <span class="role">Brand identity, content &amp; marketplace</span>
+          <span class="open">Open case study</span></span></button>
+      <button class="card vs" data-cat="creative marketing" data-k="vs">
+        <span class="shot"><img src="img/logo-vastu.png" alt="Deonarayan Vastu" style="border-radius:14px">
+          <span class="bar"><span class="pill-s">Creative</span><span class="pill-s">Marketing</span></span></span>
+        <span class="txt"><h3>Deonarayan Vastu</h3>
+          <span class="role">Digital marketing &amp; local search</span>
+          <span class="open">Open case study</span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- EMEA -->
+<section class="sec" id="emea" style="padding-top:34px;padding-bottom:62px">
+  <div class="w">
+    <div class="emea rv">
+      <div class="emea-grid">
+        <div>
+          <h2>I ran a region across <em>three continents</em></h2>
+          <p class="sub">Europe, the UK, the Middle East and Africa for a global ingredients manufacturer — thirty-plus markets, each with its own rules about what a label is allowed to claim. Distributors, key accounts, the annual plan and the forecast behind it.</p>
+          <div class="figs" id="figs">
+            <button class="fig" aria-expanded="false"><b>₹93 Cr</b><span class="lbl">Regional revenue</span>
+              <span class="why">₹55 Cr from key accounts and ₹38 Cr from new business, FY 2025–26.</span></button>
+            <button class="fig" aria-expanded="false"><b>710 MT</b><span class="lbl">Regional volume</span>
+              <span class="why">A record for the territory, and 9.06% ahead of the annual operating plan.</span></button>
+            <button class="fig" aria-expanded="false"><b>+149%</b><span class="lbl">Volume growth YoY</span>
+              <span class="why">Driven by sub-regional segmentation and monthly pipeline review, at 91.69% forecast accuracy.</span></button>
+            <button class="fig" aria-expanded="false"><b>30+</b><span class="lbl">Country markets</span>
+              <span class="why">Across Europe, the UK, the Middle East and Africa — each with separate regulatory requirements.</span></button>
+            <button class="fig" aria-expanded="false"><b>410+</b><span class="lbl">Accounts</span>
+              <span class="why">Active and prospective: branded customers, contract manufacturers and distributors.</span></button>
+            <button class="fig" aria-expanded="false"><b>39%</b><span class="lbl">Outreach response rate</span>
+              <span class="why">Across 15,000+ emails, 146 calls and 219 LinkedIn approaches, converting at 58.1% lead-to-order.</span></button>
+          </div>
+          <p class="tiny">Regional business results for the territory I managed, not personal revenue generated independently.<br>
+          Accounts engaged and managed included Nestlé, The Hut Group, The Quality Group, GymBeam, Boots and others.</p>
+        </div>
+        <div>
+          <img class="map" src="img/emea-map.jpg" alt="Map of Europe, the Middle East and Africa showing the markets covered">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services" style="padding-top:20px">
+  <div class="w">
+    <div class="head rv"><h2>How I can <em>help</em></h2></div>
+    <div class="svc rv" id="svc">
+      <button class="sv" aria-expanded="false"><span class="n">01</span><h4>Marketing strategy &amp; execution</h4>
+        <span class="more"><p>Market research, positioning and a plan you can actually run — then the campaigns and content that follow from it.</p></span>
+        <span class="tap">What this involves</span></button>
+      <button class="sv" aria-expanded="false"><span class="n">02</span><h4>Business development</h4>
+        <span class="more"><p>Finding where the next business is and going after it: opportunity assessment, prospecting, distributor development and account growth.</p></span>
+        <span class="tap">What this involves</span></button>
+      <button class="sv" aria-expanded="false"><span class="n">03</span><h4>Brand development &amp; launch</h4>
+        <span class="more"><p>Positioning, identity and a launch plan — so a brand arrives with a reason to exist, not just a logo.</p></span>
+        <span class="tap">What this involves</span></button>
+      <button class="sv" aria-expanded="false"><span class="n">04</span><h4>Social media &amp; content</h4>
+        <span class="more"><p>Strategy and calendar, plus the reels, carousels and production itself. One person across the plan and the making.</p></span>
+        <span class="tap">What this involves</span></button>
+      <button class="sv" aria-expanded="false"><span class="n">05</span><h4>Marketplace marketing</h4>
+        <span class="more"><p>Amazon and marketplace presence: listings, category positioning and product content worth stopping on.</p></span>
+        <span class="tap">What this involves</span></button>
+      <button class="sv" aria-expanded="false"><span class="n">06</span><h4>Local search</h4>
+        <span class="more"><p>Google Business Profile, reviews and search-led content, so you're there the moment someone looks.</p></span>
+        <span class="tap">What this involves</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" style="padding-top:20px">
+  <div class="w">
+    <div class="about rv">
+      <div class="about-grid">
+        <div class="ab-photo"><img src="img/about-photo.jpg" alt="Simran at an international trade show"></div>
+        <div>
+          <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:16px">Hello — I'm <em style="font-style:italic;color:var(--rust)">Simran</em></h2>
+          <p>I came into business development from an English Honours degree, which is probably why I've never been able to treat the commercial side and the creative side as separate jobs.</p>
+          <p>Outside work I travel at every opportunity — Barcelona, Bangkok, Frankfurt, Milan and Bucharest all arrived through trade shows, which remains the best argument I know for a job with a passport. I'm a trained Kathak dancer, I read constantly, and I play a little guitar and keyboard. Most of my creative instincts come from there rather than from a marketing textbook.</p>
+          <p>Based in Hyderabad, working with businesses anywhere.</p>
+          <div class="facts">
+            <span class="fact">MBA — IBS Hyderabad</span>
+            <span class="fact">BA Honours English — Delhi University</span>
+            <span class="fact">Salesforce · Power BI · Excel</span>
+            <span class="fact">Video editing</span>
+            <span class="fact">AI tools — Claude, ChatGPT, Perplexity</span>
+            <span class="fact">English &amp; Hindi</span>
+            <span class="fact">Certified Kathak dancer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="w rv">
+    <h2>Tell me what you're <em>working on.</em></h2>
+    <p>A market you're trying to crack, a launch you're planning, or a brand that needs building — tell me where you're stuck and I'll tell you straight whether I can help.</p>
+    <div><a class="mailto" href="mailto:simransharma3881@gmail.com">simransharma3881@gmail.com</a></div>
+    <div class="acts" style="margin-top:0">
+      <a class="btn" href="mailto:simransharma3881@gmail.com">Email me</a>
+      <a class="btn o" href="https://www.linkedin.com/in/simransharma15/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="foot"><span>Marketing · Business Development · Creative Work</span><span>Hyderabad, India</span></div>
+  </div>
+</section>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="veil" data-close></div>
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<script>
+(function(){
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},
+      {rootMargin:'0px 0px -6% 0px',threshold:.06});
+    rvs.forEach(function(e){io.observe(e)});
+  } else { rvs.forEach(function(e){e.classList.add('in')}); }
+
+  var nav=document.getElementById('nav'), burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){
+    var o=nav.classList.toggle('open'); burger.setAttribute('aria-expanded',String(o));
+  });
+  document.getElementById('menu').addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');burger.setAttribute('aria-expanded','false')}
+  });
+  document.getElementById('brandLink').addEventListener('click',function(e){
+    e.preventDefault();
+    nav.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+    window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    if(history.replaceState) history.replaceState(null,'',location.pathname+location.search);
+  });
+
+  var PD={
+    p1:{h:'Marketing',p:'From market research and positioning through to campaign planning, production and measurement — built by the same person, so the strategy and the output don’t drift apart.',
+        t:['Go-to-market planning','Brand positioning','Competitive analysis','Campaign planning','Content strategy','Channel strategy','Launch planning','Performance measurement'],
+        link:'#work',lbl:'See related work',filter:'marketing'},
+    p2:{h:'Business Development',p:'Finding where a business can grow, then building the commercial relationships that get it there. I ran a region end to end — Europe, the UK, the Middle East and Africa — carrying the revenue and volume plan with it.',
+        t:['Market expansion','International BD','Customer acquisition','B2B prospecting','Distributor development','Account management','Commercial negotiation','Forecasting'],
+        link:'#emea',lbl:'See where I did this'},
+    p3:{h:'Creative Work',p:'Where the strategy becomes something people actually see. I build the brand system, then produce the work inside it.',
+        t:['Brand identity','Creative direction','Reels & short-form video','Carousels & campaign assets','Content calendars','Brand guidelines','Marketplace content','Production briefs'],
+        link:'#work',lbl:'See related work',filter:'creative'}
+  };
+  var pb=document.getElementById('pb'), cur=null;
+  document.getElementById('pillars').addEventListener('click',function(e){
+    var b=e.target.closest('.pil'); if(!b) return;
+    var k=b.dataset.p, btns=[].slice.call(document.querySelectorAll('.pil'));
+    if(cur===k){pb.classList.remove('open');cur=null;btns.forEach(function(x){x.setAttribute('aria-expanded','false')});return;}
+    cur=k; var d=PD[k];
+    pb.innerHTML='<h4>'+d.h+'</h4><p>'+d.p+'</p><div class="tagline-row">'+
+      d.t.map(function(t){return '<span class="tg">'+t+'</span>'}).join('')+
+      '</div><a class="jump" href="'+d.link+'"'+(d.filter?' data-filter="'+d.filter+'"':'')+'>'+d.lbl+'</a>';
+    pb.classList.add('open');
+    btns.forEach(function(x){x.setAttribute('aria-expanded',String(x.dataset.p===k))});
+    setTimeout(function(){
+      var r=pb.getBoundingClientRect();
+      if(r.bottom>innerHeight-20) pb.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'end'});
+    },470);
+  });
+  pb.addEventListener('click',function(e){
+    var a=e.target.closest('[data-filter]'); if(a) applyFilter(a.dataset.filter);
+  });
+
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  function applyFilter(f){
+    [].slice.call(document.querySelectorAll('.fl')).forEach(function(b){
+      b.setAttribute('aria-pressed',String(b.dataset.f===f));});
+    cards.forEach(function(c){
+      var show = f==='all' || c.dataset.cat.indexOf(f)>-1;
+      c.classList.toggle('hide',!show);
+      if(show){c.style.animation='none';void c.offsetWidth;c.style.animation='rise .45s cubic-bezier(.2,.7,.2,1)'}
+    });
+  }
+  document.getElementById('filters').addEventListener('click',function(e){
+    var b=e.target.closest('.fl'); if(b) applyFilter(b.dataset.f);
+  });
+
+  document.getElementById('svc').addEventListener('click',function(e){
+    var b=e.target.closest('.sv'); if(!b) return;
+    var open=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!open));
+    b.querySelector('.tap').textContent = !open ? 'Close' : 'What this involves';
+  });
+
+  document.getElementById('figs').addEventListener('click',function(e){
+    var b=e.target.closest('.fig'); if(b) b.setAttribute('aria-expanded',String(b.getAttribute('aria-expanded')!=='true'));
+  });
+
+  var CS={
+    cf:{logo:'img/logo-campaignflow.png',tile:false,title:'CampaignFlow',
+      role:'Head of Marketing &amp; Sales, Viralytics · August 2026 – present',status:'Live — building',
+      body:['A multilingual social campaign platform with no marketing function yet. I built the first go-to-market from the ground up — ideal customer, beachhead market, positioning, channel strategy and a 30/60/90 — and ran a competitive analysis across ten-plus products that surfaced a positioning territory nobody had claimed. That became the launch narrative.',
+            'Then I built what the strategy needed: the brand system, a redesigned social presence, the reels and carousels with their production briefs, and a marketing operating system of fifteen sheets and roughly 2,900 live formulas.'],
+      did:[['First 10 customer accounts','onboarded pre-launch across six verticals'],['Go-to-market strategy','ICP, beachhead, channels, 30/60/90'],
+           ['Competitive analysis','10+ products from primary vendor documentation'],['Positioning & launch narrative','built on an unoccupied territory'],
+           ['Brand system','developed end to end as a production spec'],['Marketing operating system','15 sheets, ~2,900 live formulas']],
+      cols:3,gal:[{i:'img/cf-diwali.jpg',c:'Diwali campaign post'},{v:'vid/cf-reel',s:1,c:'Campaign reel'},{i:'img/cf-hashtags.jpg',c:'Platform change explainer'}]},
+    ab:{logo:'img/logo-antarbindu.png',tile:false,title:'Antarbindu Art',
+      role:'Brand identity, content &amp; marketplace · Independent project',status:'Ongoing',
+      body:['A handmade mandala and festive-art brand with beautiful work and no identity around it. I built the brand from the artist’s own hand-drawn mandala — logo, colour, type and usage rules — so every asset since has had a system to sit inside.',
+            'From there it has been the full marketing side: the grid rhythm and content calendar, the Diwali campaign, product carousels and reels, and the marketplace listings.'],
+      did:[['Brand identity','logo, palette, type and usage rules'],['Logo system','full variant set and usage sheet'],
+           ['Content strategy','grid rhythm and posting calendar'],['Festive campaign','Diwali carousels and reels'],
+           ['Creative production','product photography and editing'],['Marketplace','Amazon listings and category positioning']],
+      cols:3,gal:[{i:'img/ab-dot.jpg',c:'Brand introduction'},{v:'vid/ab-reel',s:1,c:'Festive campaign reel'},{i:'img/ab-shubhlabh.jpg',c:'Shubh Labh colour range'}]},
+    vs:{logo:'img/logo-vastu.png',tile:true,title:'Deonarayan Vastu',
+      role:'Digital marketing &amp; local search · Independent project',status:'Ongoing',
+      body:['A consultancy whose expertise doesn’t travel on its own. Most of the work is building an audience for it — a steady content rhythm that explains Vastu in plain Hindi, reels cut for reach, and posts built around the questions people actually ask.',
+            'Alongside that sits the findability side: Google Business Profile, reviews and search-led content for the moment someone goes looking.'],
+      did:[['Content strategy','calendar and posting rhythm'],['Short-form video','scripting, editing and publishing'],
+           ['Explainer content','built around real search questions'],['Visual communication','post design and brand presentation'],
+           ['Local search','Google Business Profile and reviews'],['Announcements','consultation and event campaigns']],
+      cols:4,gal:[{v:'vid/vs-1-what-is-vastu',c:'What is Vastu Shastra?'},{v:'vid/vs-2-rented',c:'Vastu in a rented home'},{v:'vid/vs-3-chhattisgarh',c:'Vastu of Chhattisgarh'},{v:'vid/vs-4-dog',c:'Where your dog sleeps'}]}
+  };
+  var modal=document.getElementById('modal'), sheet=document.getElementById('sheet'), lastFocus=null;
+  function cell(g){
+    var cap = g.c ? '<figcaption class="gcap">'+g.c+'</figcaption>' : '';
+    if(g.v){
+      return '<figure><div class="cell"><div class="vwrap">'+
+        '<video src="'+g.v+'.mp4" poster="'+g.v+'.jpg" muted loop playsinline preload="metadata" autoplay></video>'+
+        (g.s?'<button class="snd" type="button" aria-label="Turn sound on" data-snd>\u266a</button>':'')+
+        '</div></div>'+cap+'</figure>';
+    }
+    return '<figure><div class="cell"><img class="'+(g.fit?'fit':'')+'" src="'+g.i+'" alt=""></div>'+cap+'</figure>';
+  }
+  function openCase(k){
+    var d=CS[k]; if(!d) return;
+    lastFocus=document.activeElement;
+    sheet.innerHTML='<button class="x" data-close aria-label="Close">&times;</button>'+
+      '<div class="sheet-top"><img class="lg'+(d.tile?' tile':'')+'" src="'+d.logo+'" alt="">'+
+      '<h3 id="mTitle">'+d.title+'</h3><p class="role">'+d.role+'</p><span class="status">'+d.status+'</span>'+
+      d.body.map(function(p){return '<p>'+p+'</p>'}).join('')+
+      '<ul class="did">'+d.did.map(function(x){return '<li><b>'+x[0]+'</b> — '+x[1]+'</li>'}).join('')+'</ul></div>'+
+      '<div class="gal" style="--cols:'+(d.cols||3)+'">'+d.gal.map(cell).join('')+'</div>';
+    modal.classList.add('show'); document.body.classList.add('lock');
+    sheet.scrollTop=0; sheet.querySelector('.x').focus();
+    [].slice.call(sheet.querySelectorAll('video')).forEach(function(v){
+      v.muted=true; var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){});
+    });
+  }
+  function closeCase(){
+    [].slice.call(sheet.querySelectorAll('video')).forEach(function(v){try{v.pause()}catch(e){}});
+    modal.classList.remove('show');document.body.classList.remove('lock');if(lastFocus)lastFocus.focus();
+  }
+  document.getElementById('cards').addEventListener('click',function(e){
+    var c=e.target.closest('.card'); if(c) openCase(c.dataset.k);
+  });
+  modal.addEventListener('click',function(e){
+    var sb=e.target.closest('[data-snd]');
+    if(sb){
+      var v=sb.parentNode.querySelector('video');
+      v.muted=!v.muted;
+      sb.textContent = v.muted ? '\u266a' : '\u266b';
+      sb.setAttribute('aria-label', v.muted ? 'Turn sound on' : 'Turn sound off');
+      if(!v.muted){ v.volume=0.85; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+      return;
+    }
+    if(e.target.closest('[data-close]'))closeCase();
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('show'))closeCase()});
+})();
+</script>
+</body>
+</html>
